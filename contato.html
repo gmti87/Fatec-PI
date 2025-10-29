@@ -1,29 +1,32 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contato - Plataforma de Empregos</title>
-  <link rel="stylesheet" href="./style/contato.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Depoimentos — Site de Vagas Tech</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/contato.css">
 </head>
 <body>
-
-  <!-- Navbar padronizada -->
-  <nav class="navbar">
-    <div class="container">
-      <a class="navbar-brand" href="#">Plataforma de Empregos</a>
-      <div class="navbar-links">
-        <a href="index.html">Home</a>
-        <a href="vagas.html">Vagas</a>
-        <a href="sobre.html">Sobre</a>
-        <a href="contato.html" class="active">Contato</a>
-      </div>
+  <!-- Top red bar (faixa vermelha) -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="logo">Projeto Fatec</div>
+      <nav class="main-nav" aria-label="Menu principal">
+        <a href="#">Home</a>
+        <a href="#">Sobre</a>
+        <a href="#">Contato</a>
+        <a href="#">Vagas</a>
+      </nav>
     </div>
-  </nav>
+  </div>
 
-  <!-- Conteúdo -->
+  <!-- botão para menu mobile -->
+  <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+
+   <!-- Conteúdo -->
   <main class="main-content">
-    <h1>Entre em Contato</h1>
+    <h1 class="section-title"> Entre em Contato</h1>
     <div class="form-card">
       <form>
         <label for="nome">Nome</label>
@@ -42,17 +45,40 @@
       </form>
     </div>
 
-    <div class="contact-info">
-      <p><strong>Email:</strong> contato@plataformaempregos.com</p>
-      <p><strong>Telefone:</strong> (11) 99999-9999</p>
-      <p><strong>Endereço:</strong> Rua Exemplo, 123 - São Paulo/SP</p>
+    <div class="hero">
+      <p class="lead"><strong>Email:</strong> contato@plataformaempregos.com</p>
+      <p class="lead"><strong>Telefone:</strong> (11) 99999-9999</p>
+      <p class="lead"><strong>Endereço:</strong> Rua Exemplo, 123 - São Paulo/SP</p>
     </div>
   </main>
 
-  <!-- Rodapé -->
   <footer class="footer">
-    <p>© 2025 Plataforma de Empregos - Todos os direitos reservados</p>
+    <div class="site-footer">
+      <div class="container topbar-inner footer-top-inner">
+        <div class="footer-copy">© 2025 Projeto Fatec — Conectando Alunos e Empresas</div>
+      </div>
+    </div>
   </footer>
+
+  <script>
+    // Toggle mobile nav
+    (function(){
+      const btn = document.querySelector('.nav-toggle');
+      const nav = document.querySelector('.main-nav');
+      if(!btn || !nav) return;
+      btn.addEventListener('click', ()=>{
+        const open = nav.classList.toggle('open');
+        btn.setAttribute('aria-expanded', open);
+      });
+      // close when clicking outside on mobile
+      document.addEventListener('click', (e)=>{
+        if(!nav.classList.contains('open')) return;
+        if(e.target === nav || nav.contains(e.target) || e.target === btn) return;
+        nav.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+      });
+    })();
+  </script>
 
 </body>
 </html>
