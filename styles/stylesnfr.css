@@ -1,0 +1,285 @@
+/* Reset Página */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonte sem Serifa */
+
+body {
+    font-family: sans-serif;
+}
+
+/* cabeçalho */
+
+.header-pi {
+    height: 12vh;
+    background-color: #b20000;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* cabeçalho - lado esquerdo - logo */
+
+.header-pi-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-pi-logo img {
+    width: 100px;
+    height: 100%;
+}
+
+.header-pi-title {
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+/* cabeçalho - lado direito - menu */
+
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.6rem;
+}
+
+.menu a:hover {
+    font-size: 2.2rem;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 2.2rem;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+/* meio da página */
+
+.main-page-pi {
+    min-height: 76vh;
+}
+
+.main-page-pi img {
+    width: 100%;
+    height: 76vh;
+    object-position: center;
+    display: block;
+}
+
+/* rodapé */
+
+.footer-pi {
+    height: 12vh;
+    background-color: #b20000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-pi p {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+/* Teste Responsividade */
+
+@media (max-width: 134px) {
+    .header-pi-logo img {
+        width: 50px;
+        height: 100%;
+        margin-left: -5px;
+    }
+
+    /* ajustar para telas 86px */
+
+    .header-pi-title {
+        font-size: 0.6rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media (min-width: 135px) and (max-width: 170px) {
+    .header-pi-logo img {
+        width: 50px;
+        height: 100%;
+        margin-left: -5px;
+    }
+
+    .header-pi-title {
+        font-size: 0.9rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-pi p {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+}
+
+@media (min-width: 171px) and (max-width: 240px) {
+    .header-pi-logo img {
+        width: 80px;
+        height: 100%;
+    }
+
+    .header-pi-title {
+        font-size: 1.1rem;
+    }
+
+    .footer-pi p {
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+
+@media (min-width: 241px) and (max-width: 360px) {
+    .header-pi-logo img {
+        width: 80px;
+        height: 100%;
+    }
+
+    .header-pi-title {
+        font-size: 1.1rem;
+    }
+
+    .footer-pi p {
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+    .header-pi-logo img {
+        width: 80px;
+        height: 80%;
+    }
+
+    .header-pi-title {
+        font-size: 1.2rem;
+    }
+    
+    .footer-pi p {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #b20000;
+        position: absolute;
+        top: 12vh;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu a {
+        padding: 10px 0;
+        font-size: 1rem;
+        display: block;
+    }
+    
+    .menu a:hover {
+        font-size: 1rem;
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 0.9rem;
+        cursor: pointer;
+        color: #fff;
+        position: absolute;
+        right: 10px;
+        top: 22px;
+    }
+
+    #menu-toggle:checked + .menu-icon + .menu {
+        display: flex;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 600px) {
+    .header-pi-logo img {
+        width: 80px;
+        height: 80%;
+    }
+    
+    .header-pi-title {
+        font-size: 1.1rem;
+    }
+    
+    .menu a {
+        font-size: 1.1rem;
+    }
+    
+    .menu a:hover {
+        font-size: 1.4rem;
+    }
+
+    .footer-pi p {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 720px) {
+    .header-pi-logo img {
+        width: 80px;
+        height: 80%;
+    }
+    .header-pi-title {
+        font-size: 1.2rem;
+    }
+    .menu a {
+        font-size: 1.2rem;
+    }
+    .footer-pi p {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+}
+
+@media (min-width: 721px) and (max-width: 840px) {
+    .header-pi-logo img {
+        width: 90px;
+        height: 90%;
+    }
+    .menu a {
+        font-size: 1.4rem;
+    }
+
+    .footer-pi p {
+        font-size: 1.7rem;
+        text-align: center;
+    }
+}
+
+@media (min-width: 841px) and (max-width: 960px) {
+    .footer-pi p {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+}
