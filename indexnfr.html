@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Interdisciplinar</title>
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./styles/stylesnfr.css">
 </head>
 
 <body>
 
     <header class="header-pi">
         <div class="header-pi-logo">
-            <img src="images/logo.png" alt="Computador / Arquivos">
+            <img src="imgs/teste-logo-3.png" alt="Computador / Arquivos">
             <p class="header-pi-title">
                 <span class="projeto">Projeto</span>
                 <span class="fatec">Fatec</span>
@@ -34,12 +34,23 @@
     </header>
 
     <main class="main-page-pi">
-        <img src="images/tecnologia.jpeg" alt="Imagem sobre Tecnologia">
     </main>
 
     <footer class="footer-pi">
         <p>2025 - Fatec Franca - DSM - Projeto Interdisciplinar &copy;</p>
     </footer>
+
+    <script>
+        const toggle = document.getElementById('menu-toggle');
+        toggle.addEventListener('change', () => {
+            if (toggle.checked) {
+                document.body.classList.add('menu-open');
+            } else {
+                document.body.classList.remove('menu-open');
+            }
+        });
+    </script>
+
 
 </body>
 
