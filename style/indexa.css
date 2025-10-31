@@ -1,18 +1,22 @@
-/* Reset Página */
 
+/* Thiago William - Reset de margin e padding */
 * {
     margin: 0;
-    padding: 0;
+    padding: 1px;
     box-sizing: border-box;
 }
 
-/* Fonte sem Serifa */
-
+/* Estilos gerais */
 body {
     font-family: sans-serif;
+    background-image: url(../Imagens/WhatsApp\ Image\ 2025-10-22\ at\ 22.49.26.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
 }
 
-/* cabeçalho */
+/* Navbar Gabriel Moreti*/
 
 .header-pi {
     height: 12vh;
@@ -66,7 +70,9 @@ body {
     display: none;
 }
 
-/* meio da página */
+/* meio da página 
+
+teste Gabriel Moreti
 
 .main-page-pi {
     min-height: 76vh;
@@ -79,7 +85,32 @@ body {
     display: block;
 }
 
-/* rodapé */
+*/
+
+/* Parte Thiago William */
+#saudacao {
+    width: 1200px;
+    height: 350px;
+    margin-top: 100px;
+    display: grid;
+    background-color: rgb(0, 0, 0, 0.5);
+    margin-left: 170px;
+}
+
+#saudacao h2 {
+    font-size: 50px;
+    margin-left: 144px;
+    color: #ffffff;
+}
+
+#saudacao p {
+    font-size: 30px;
+    margin-left: 230px;
+    margin-top: -20px;
+    color: #ffffff;
+}
+
+/* rodapé Gabriel Moreti */
 
 .footer-pi {
     height: 12vh;
@@ -96,7 +127,7 @@ body {
     font-weight: normal;
 }
 
-/* Teste Responsividade */
+/* Teste Responsividade Gabriel Moreti */
 
 @media (min-width: 50px) and (max-width: 110px) {
     /* ver */
