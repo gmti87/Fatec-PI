@@ -136,7 +136,8 @@ body{
    Se o arquivo não existir, nada será exibido e o fundo atual (var(--bg)) permanecerá. */
 body{
   /* Aponta para o arquivo que já existe na pasta images */
-  background-image: url('images/images.jpg');
+  background-image: url('../imagens/imagesvagas.jpg');
+  /* background-image: url('images/images.jpg'); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
