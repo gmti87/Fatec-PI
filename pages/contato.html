@@ -1,12 +1,15 @@
 <!doctype html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Depoimentos — Site de Vagas Tech</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style/contato.css">
+  <link rel="stylesheet" href="../style/contato.css">
+  <link rel="stylesheet" href="../style/index.css">
 </head>
+
 <body>
   <!-- Top red bar (faixa vermelha) -->
   <div class="topbar">
@@ -24,7 +27,31 @@
   <!-- botão para menu mobile -->
   <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
 
-   <!-- Conteúdo -->
+  <!-- outro menu -->
+  <header class="header-pi">
+        <div class="header-pi-logo">
+            <img src="../Imagens/teste-logo-3.png" alt="Computador / Arquivos">
+            <p class="header-pi-title">
+                <span class="projeto">Projeto</span>
+                <span class="fatec">Fatec</span>
+            </p>
+        </div>
+
+        <div class="header-pi-menu">
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+            <nav class="menu">
+                <a href="../index.html">Home</a>
+                <a href="../pages/sobre.html">Sobre</a>
+                <a href="../pages/contato.html">Contato</a>
+                <a href="../pages/vagas.html">Vagas</a>
+                <a href="../pages/depoimentos.html">Depoimentos</a>
+            </nav>
+        </div>
+    </header>
+
+  <!-- Conteúdo -->
   <main class="main-content">
     <h1 class="section-title"> Entre em Contato</h1>
     <div class="form-card">
@@ -60,20 +87,25 @@
     </div>
   </footer>
 
+  <!-- outro footer -->
+  <footer class="footer-pi">
+    <p>2025 - Fatec Franca - DSM - Projeto Interdisciplinar &copy;</p>
+  </footer>
+
   <script>
     // Toggle mobile nav
-    (function(){
+    (function () {
       const btn = document.querySelector('.nav-toggle');
       const nav = document.querySelector('.main-nav');
-      if(!btn || !nav) return;
-      btn.addEventListener('click', ()=>{
+      if (!btn || !nav) return;
+      btn.addEventListener('click', () => {
         const open = nav.classList.toggle('open');
         btn.setAttribute('aria-expanded', open);
       });
       // close when clicking outside on mobile
-      document.addEventListener('click', (e)=>{
-        if(!nav.classList.contains('open')) return;
-        if(e.target === nav || nav.contains(e.target) || e.target === btn) return;
+      document.addEventListener('click', (e) => {
+        if (!nav.classList.contains('open')) return;
+        if (e.target === nav || nav.contains(e.target) || e.target === btn) return;
         nav.classList.remove('open');
         btn.setAttribute('aria-expanded', 'false');
       });
@@ -81,4 +113,5 @@
   </script>
 
 </body>
+
 </html>
