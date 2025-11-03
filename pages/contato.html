@@ -2,35 +2,23 @@
 <html lang="pt-BR">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Depoimentos — Site de Vagas Tech</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../style/contato.css">
-  <link rel="stylesheet" href="../style/index.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Depoimentos — Site de Vagas Tech</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Página -->
+    <link rel="stylesheet" href="../style/contato.css">
+    <!-- CSS Navbar e Footer -->
+    <link rel="stylesheet" href="../style/navbar-footer.css">
 </head>
 
 <body>
-  <!-- Top red bar (faixa vermelha) -->
-  <div class="topbar">
-    <div class="container topbar-inner">
-      <div class="logo">Projeto Fatec</div>
-      <nav class="main-nav" aria-label="Menu principal">
-        <a href="#">Home</a>
-        <a href="#">Sobre</a>
-        <a href="#">Contato</a>
-        <a href="#">Vagas</a>
-      </nav>
-    </div>
-  </div>
 
-  <!-- botão para menu mobile -->
-  <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
-
-  <!-- outro menu -->
-  <header class="header-pi">
+    <!-- Footer Novo -->
+    <header class="header-pi">
         <div class="header-pi-logo">
-            <img src="../Imagens/teste-logo-3.png" alt="Computador / Arquivos">
+            <img src="../imagens/teste-logo-3.png" alt="Computador / Arquivos">
             <p class="header-pi-title">
                 <span class="projeto">Projeto</span>
                 <span class="fatec">Fatec</span>
@@ -43,74 +31,95 @@
 
             <nav class="menu">
                 <a href="../index.html">Home</a>
-                <a href="../pages/sobre.html">Sobre</a>
-                <a href="../pages/contato.html">Contato</a>
-                <a href="../pages/vagas.html">Vagas</a>
-                <a href="../pages/depoimentos.html">Depoimentos</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="contato.html">Contato</a>
+                <a href="vagas.html">Vagas</a>
+                <a href="depoimentos.html">Depoimentos</a>
             </nav>
         </div>
     </header>
 
-  <!-- Conteúdo -->
-  <main class="main-content">
-    <h1 class="section-title"> Entre em Contato</h1>
-    <div class="form-card">
-      <form>
-        <label for="nome">Nome</label>
-        <input type="text" id="nome" placeholder="Digite seu nome" required>
-
-        <label for="email">E-mail</label>
-        <input type="email" id="email" placeholder="Digite seu e-mail" required>
-
-        <label for="assunto">Assunto</label>
-        <input type="text" id="assunto" placeholder="Digite o assunto" required>
-
-        <label for="mensagem">Mensagem</label>
-        <textarea id="mensagem" rows="5" placeholder="Digite sua mensagem" required></textarea>
-
-        <button type="submit">Enviar</button>
-      </form>
+    <!-- Footer Antigo -->
+    <!-- Top red bar (faixa vermelha) 
+    <div class="topbar">
+        <div class="container topbar-inner">
+        <div class="logo">Projeto Fatec</div>
+        <nav class="main-nav" aria-label="Menu principal">
+            <a href="#">Home</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+            <a href="#">Vagas</a>
+        </nav>
+        </div>
     </div>
+    -->
 
-    <div class="hero">
-      <p class="lead"><strong>Email:</strong> contato@plataformaempregos.com</p>
-      <p class="lead"><strong>Telefone:</strong> (11) 99999-9999</p>
-      <p class="lead"><strong>Endereço:</strong> Rua Exemplo, 123 - São Paulo/SP</p>
-    </div>
-  </main>
+    <!-- botão para menu mobile 
+    <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    -->
 
-  <footer class="footer">
-    <div class="site-footer">
-      <div class="container topbar-inner footer-top-inner">
-        <div class="footer-copy">© 2025 Projeto Fatec — Conectando Alunos e Empresas</div>
-      </div>
-    </div>
-  </footer>
+    <!-- Conteúdo -->
+    <main class="main-content">
+        <h1 class="section-title"> Entre em Contato</h1>
+        <div class="form-card">
+            <form>
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" placeholder="Digite seu nome" required>
 
-  <!-- outro footer -->
-  <footer class="footer-pi">
-    <p>2025 - Fatec Franca - DSM - Projeto Interdisciplinar &copy;</p>
-  </footer>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="Digite seu e-mail" required>
 
-  <script>
-    // Toggle mobile nav
-    (function () {
-      const btn = document.querySelector('.nav-toggle');
-      const nav = document.querySelector('.main-nav');
-      if (!btn || !nav) return;
-      btn.addEventListener('click', () => {
-        const open = nav.classList.toggle('open');
-        btn.setAttribute('aria-expanded', open);
-      });
-      // close when clicking outside on mobile
-      document.addEventListener('click', (e) => {
-        if (!nav.classList.contains('open')) return;
-        if (e.target === nav || nav.contains(e.target) || e.target === btn) return;
-        nav.classList.remove('open');
-        btn.setAttribute('aria-expanded', 'false');
-      });
-    })();
-  </script>
+                <label for="assunto">Assunto</label>
+                <input type="text" id="assunto" placeholder="Digite o assunto" required>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" rows="5" placeholder="Digite sua mensagem" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+        <div class="hero">
+            <p class="lead"><strong>Email:</strong> contato@plataformaempregos.com</p>
+            <p class="lead"><strong>Telefone:</strong> (11) 99999-9999</p>
+            <p class="lead"><strong>Endereço:</strong> Rua Exemplo, 123 - São Paulo/SP</p>
+        </div>
+    </main>
+
+    <!-- Novo Footer -->
+    <footer class="footer-pi">
+        <p>2025 - Fatec Franca - DSM - Projeto Interdisciplinar &copy;</p>
+    </footer>
+
+    <!-- Footer Antigo 
+    <footer class="footer">
+        <div class="site-footer">
+            <div class="container topbar-inner footer-top-inner">
+                <div class="footer-copy">© 2025 Projeto Fatec — Conectando Alunos e Empresas</div>
+            </div>
+        </div>
+    </footer>
+    -->
+
+    <!-- <script>
+        // Toggle mobile nav
+        (function () {
+            const btn = document.querySelector('.nav-toggle');
+            const nav = document.querySelector('.main-nav');
+            if (!btn || !nav) return;
+            btn.addEventListener('click', () => {
+                const open = nav.classList.toggle('open');
+                btn.setAttribute('aria-expanded', open);
+            });
+            // close when clicking outside on mobile
+            document.addEventListener('click', (e) => {
+                if (!nav.classList.contains('open')) return;
+                if (e.target === nav || nav.contains(e.target) || e.target === btn) return;
+                nav.classList.remove('open');
+                btn.setAttribute('aria-expanded', 'false');
+            });
+        })();
+    </script> -->
 
 </body>
 

@@ -29,12 +29,20 @@ body{
   padding:16px 0;
   margin-bottom:28px;
 }
-.header-inner{display:flex;align-items:center;justify-content:space-between}
+.header-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between
+}
+
 .logo{font-weight:700;font-size:20px}
+
 .main-nav a{color:rgba(255,255,255,0.95);text-decoration:none;margin-left:18px}
+
 .main-nav a.active{color:var(--primary);font-weight:700}
 
 .page-header{padding:18px 0;text-align:center}
+
 .page-title{color:var(--nav);font-size:32px;margin:8px 0}
 
 .filters{
@@ -136,7 +144,8 @@ body{
    Se o arquivo não existir, nada será exibido e o fundo atual (var(--bg)) permanecerá. */
 body{
   /* Aponta para o arquivo que já existe na pasta images */
-  background-image: url('../imagens/imagesvagas.jpg');
+  /* background-image: url('../imagens/imagesvagas.jpg'); */
+  background-image: url('../imagens/vagas.jpg');
   /* background-image: url('images/images.jpg'); */
   background-repeat: no-repeat;
   background-size: cover;

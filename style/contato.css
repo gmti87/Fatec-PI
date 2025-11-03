@@ -1,33 +1,23 @@
 /*css padrao inicio*/
-*{
-	box-sizing:border-box;
-	margin:0;
-	padding:0;
-	font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif
-}
-
-:root{
-	--bg:#0f1724;
-	--card:#ffffff;
-	--muted:#6b7280;
-	--accent:#06b6d4
-}
-
-body{
-	background:linear-gradient(180deg,#0b1220 0%, #071028 100%);
-	color:#0b1220
-}
+*{box-sizing:border-box;margin:0;padding:0;font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif}
+:root{--bg:#0f1724;--card:#ffffff;--muted:#6b7280;--accent:#06b6d4}
+body{background:linear-gradient(180deg,#0b1220 0%, #071028 100%);color:#0b1220}
 
 /* Full-page background using the supplied image (falls back to assets) */
-body::before{
+body::before {
 	content:"";
 	position:fixed;
 	inset:0;
+	/* Caminho Antigo 
 	background-image: url('../images/images.jpg'), url('../images/depoimento-bg.jpg'), url('../assets/depoimento-bg.jpg');
+	*/
+	background-image: url('../imagens/contato.jpg');
+	
 	background-size:cover;
 	background-position:center;
 	background-attachment:fixed;
-	filter:blur(1px) brightness(.55);z-index:-2
+	filter:blur(1px) brightness(.55);
+	z-index:-2
 }
 
 /* Top red bar (faixa) and footer red styling */
@@ -45,8 +35,12 @@ body::before{
 .main-nav.open{display:block;position:fixed;top:56px;right:0;left:0;background:var(--brand-red);padding:12px 28px;box-shadow:0 6px 12px rgba(0,0,0,.12);flex-direction:column}
 .main-nav.open a{margin:10px 0;font-size:1rem}
 
-/* ensure page content doesn't go under the fixed topbar/footer */
-body{padding-top:56px;padding-bottom:56px}
+/* ensure page content doesn't go under the fixed topbar/footer 
+body {
+	padding-top:56px;
+	padding-bottom:56px
+}
+*/
 
 /* Footer red bar */
 .site-footer{background:var(--brand-red);color:#fff;position:fixed;left:0;right:0;bottom:0;z-index:60;height:56px;border-top:2px solid rgba(0,0,0,.08)}
@@ -121,7 +115,20 @@ time{color:#64748b;font-size:.9rem}
 body{background:linear-gradient(180deg,#0b1220 0%, #071028 100%);color:#0b1220}
 
 /* Full-page background using the supplied image (falls back to assets) */
-body::before{content:"";position:fixed;inset:0;background-image: url('../images/images.jpg'), url('../images/depoimento-bg.jpg'), url('../assets/depoimento-bg.jpg');background-size:cover;background-position:center;background-attachment:fixed;filter:blur(1px) brightness(.55);z-index:-2}
+body::before {
+	content:"";
+	position:fixed;
+	inset:0;
+	/* Comentado para mostrar a imagem 
+	background-image: url('../images/images.jpg'), url('../images/depoimento-bg.jpg'), url('../assets/depoimento-bg.jpg');
+	*/
+	background-image: url('../imagens/contato.jpg');
+	background-size:cover;
+	background-position:center;
+	background-attachment:fixed;
+	filter:blur(1px) brightness(.55);
+	z-index:-2
+}
 
 /* Page loader styles */
 .page-loader{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(3,7,18,0.56);backdrop-filter:blur(2px);-webkit-backdrop-filter:blur(2px);z-index:1200;transition:opacity .36s ease,visibility .36s ease}
@@ -146,8 +153,12 @@ body::before{content:"";position:fixed;inset:0;background-image: url('../images/
 .main-nav.open{display:block;position:fixed;top:56px;right:0;left:0;background:var(--brand-red);padding:12px 28px;box-shadow:0 6px 12px rgba(0,0,0,.12);flex-direction:column}
 .main-nav.open a{margin:10px 0;font-size:1rem}
 
-/* ensure page content doesn't go under the fixed topbar/footer */
-body{padding-top:56px;padding-bottom:56px}
+/* ensure page content doesn't go under the fixed topbar/footer 
+body {
+	padding-top:56px;
+	padding-bottom:56px
+}
+*/
 
 /* Footer red bar */
 .site-footer{background:var(--brand-red);color:#fff;position:fixed;left:0;right:0;bottom:0;z-index:60;height:56px;border-top:2px solid rgba(0,0,0,.08)}
@@ -298,5 +309,3 @@ time{color:#64748b;font-size:.9rem}
   cursor: pointer;
   transition: background 0.3s;
 }
-
-

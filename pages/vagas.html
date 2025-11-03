@@ -2,223 +2,222 @@
 <html lang="pt-BR">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Vagas de Tecnologia</title>
-  <!-- <link rel="stylesheet" href="styles.css" /> -->
-  <link rel="stylesheet" href="../style/vagasa.css">
-  <link rel="stylesheet" href="../style/index.css">
-  <meta name="description" content="Lista de vagas e oportunidades na área de tecnologia" />
-  <meta name="author" content="Projeto Fatec" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vagas de Tecnologia</title>
+    <!-- CSS Página -->
+    <link rel="stylesheet" href="../style/vagas.css" />
+    <!-- CSS Navbar e Footer -->
+    <link rel="stylesheet" href="../style/navbar-footer.css">
+
+    <meta name="description" content="Lista de vagas e oportunidades na área de tecnologia" />
+    <meta name="author" content="Projeto Fatec" />
 </head>
 
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="logo">Projeto Fatec</div>
-      <nav class="main-nav" aria-label="Principal">
-        <a href="index.html">Home</a>
-        <a href="#">Sobre</a>
-        <a href="#">Contato</a>
-        <a class="active" href="#">Vagas</a>
-        <a href="depoimentos.html">Depoimentos</a>
-      </nav>
-    </div>
-  </header>
+    <header class="header-pi">
+        <div class="header-pi-logo">
+            <img src="../imagens/teste-logo-3.png" alt="Computador / Arquivos">
+            <p class="header-pi-title">
+                <span class="projeto">Projeto</span>
+                <span class="fatec">Fatec</span>
+            </p>
+        </div>
 
-  <!-- outro header -->
+        <div class="header-pi-menu">
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
 
-  <header class="header-pi">
-    <div class="header-pi-logo">
-      <img src="../imagens/teste-logo-3.png" alt="Computador / Arquivos">
-      <p class="header-pi-title">
-        <span class="projeto">Projeto</span>
-        <span class="fatec">Fatec</span>
-      </p>
-    </div>
+            <nav class="menu">
+                <a href="../index.html">Home</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="contato.html">Contato</a>
+                <a href="vagas.html">Vagas</a>
+                <a href="depoimentos.html">Depoimentos</a>
+            </nav>
+        </div>
+    </header>
 
-    <div class="header-pi-menu">
-      <input type="checkbox" id="menu-toggle" />
-      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    <!-- Cabeçalho Antigo 
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo">Projeto Fatec</div>
+            <nav class="main-nav" aria-label="Principal">
+                <a href="index.html">Home</a>
+                <a href="#">Sobre</a>
+                <a href="#">Contato</a>
+                <a class="active" href="#">Vagas</a>
+                <a href="depoimentos.html">Depoimentos</a>
+            </nav>
+        </div>
+    </header>
+    -->
 
-      <nav class="menu">
-        <a href="../index.html">Home</a>
-        <a href="../pages/sobre.html">Sobre</a>
-        <a href="../pages/contato.html">Contato</a>
-        <a href="../pages/vagas.html">Vagas</a>
-        <a href="../pages/depoimentos.html">Depoimentos</a>
-      </nav>
-    </div>
-  </header>
+    <!-- Main -->
+    <main>
+        <div class="container page-header">
+            <h1 class="page-title">Vagas e Oportunidades</h1>
+        </div>
 
-  <!-- Parte Main -->
+        <div class="container">
+            <section class="filters">
+                <input type="search" placeholder="Pesquisar vagas..." aria-label="Pesquisar vagas" />
+                <select aria-label="Filtrar por local">
+                    <option>Todos os locais</option>
+                    <option>Remoto</option>
+                    <option>São Paulo</option>
+                    <option>Rio de Janeiro</option>
+                </select>
+            </section>
 
-  <main>
-    <div class="container page-header">
-      <h1 class="page-title">Vagas e Oportunidades</h1>
-    </div>
+            <section class="jobs-grid" aria-label="Lista de vagas">
+                <article class="job-card">
+                    <h2>Desenvolvedor Front-end</h2>
+                    <p class="meta"><strong>Empresa:</strong> Tech Solutions</p>
+                    <ul class="job-list">
+                        <li>📍 São Paulo · Pleno</li>
+                        <li>💰 R$ 5.000,00</li>
+                        <li>🧠 Requisitos: HTML, CSS, JavaScript, React</li>
+                    </ul>
+                    <a class="apply" href="#">Candidatar-se</a>
+                </article>
 
-    <div class="container">
-      <section class="filters">
-        <input type="search" placeholder="Pesquisar vagas..." aria-label="Pesquisar vagas" />
-        <select aria-label="Filtrar por local">
-          <option>Todos os locais</option>
-          <option>Remoto</option>
-          <option>São Paulo</option>
-          <option>Rio de Janeiro</option>
-        </select>
-      </section>
+                <article class="job-card">
+                    <h2>Analista de Dados</h2>
+                    <p class="meta"><strong>Empresa:</strong> DataCorp</p>
+                    <ul class="job-list">
+                        <li>📍 Remoto</li>
+                        <li>💰 R$ 6.500,00</li>
+                        <li>🧠 Requisitos: SQL, Python, Power BI</li>
+                    </ul>
+                    <a class="apply" href="#">Candidatar-se</a>
+                </article>
 
-      <section class="jobs-grid" aria-label="Lista de vagas">
-        <article class="job-card">
-          <h2>Desenvolvedor Front-end</h2>
-          <p class="meta"><strong>Empresa:</strong> Tech Solutions</p>
-          <ul class="job-list">
-            <li>📍 São Paulo · Pleno</li>
-            <li>💰 R$ 5.000,00</li>
-            <li>🧠 Requisitos: HTML, CSS, JavaScript, React</li>
-          </ul>
-          <a class="apply" href="#">Candidatar-se</a>
-        </article>
+                <article class="job-card">
+                    <h2>Engenheiro de DevOps</h2>
+                    <p class="meta"><strong>Empresa:</strong> CloudOps</p>
+                    <ul class="job-list">
+                        <li>📍 Rio de Janeiro · Sênior</li>
+                        <li>💰 R$ 10.000,00</li>
+                        <li>🧠 Requisitos: CI/CD, Docker, Kubernetes</li>
+                    </ul>
+                    <a class="apply" href="#">Candidatar-se</a>
+                </article>
 
-        <article class="job-card">
-          <h2>Analista de Dados</h2>
-          <p class="meta"><strong>Empresa:</strong> DataCorp</p>
-          <ul class="job-list">
-            <li>📍 Remoto</li>
-            <li>💰 R$ 6.500,00</li>
-            <li>🧠 Requisitos: SQL, Python, Power BI</li>
-          </ul>
-          <a class="apply" href="#">Candidatar-se</a>
-        </article>
+                <article class="job-card">
+                    <h2>Desenvolvedor Back-end (Node.js)</h2>
+                    <p class="meta"><strong>Empresa:</strong> Remote Solutions</p>
+                    <ul class="job-list">
+                        <li>📍 Remoto · Pleno</li>
+                        <li>💰 R$ 7.000,00</li>
+                        <li>🧠 Requisitos: Node.js, Express, SQL/NoSQL</li>
+                    </ul>
+                    <a class="apply" href="#">Candidatar-se</a>
+                </article>
 
-        <article class="job-card">
-          <h2>Engenheiro de DevOps</h2>
-          <p class="meta"><strong>Empresa:</strong> CloudOps</p>
-          <ul class="job-list">
-            <li>📍 Rio de Janeiro · Sênior</li>
-            <li>💰 R$ 10.000,00</li>
-            <li>🧠 Requisitos: CI/CD, Docker, Kubernetes</li>
-          </ul>
-          <a class="apply" href="#">Candidatar-se</a>
-        </article>
+                <article class="job-card">
+                    <h2>Engenheiro de Machine Learning</h2>
+                    <p class="meta"><strong>Empresa:</strong> AI Labs</p>
+                    <ul class="job-list">
+                        <li>📍 São Paulo · Sênior</li>
+                        <li>💰 R$ 12.000,00</li>
+                        <li>🧠 Requisitos: Python, TensorFlow, MLOps</li>
+                    </ul>
+                    <a class="apply" href="#">Candidatar-se</a>
+                </article>
 
-        <article class="job-card">
-          <h2>Desenvolvedor Back-end (Node.js)</h2>
-          <p class="meta"><strong>Empresa:</strong> Remote Solutions</p>
-          <ul class="job-list">
-            <li>📍 Remoto · Pleno</li>
-            <li>💰 R$ 7.000,00</li>
-            <li>🧠 Requisitos: Node.js, Express, SQL/NoSQL</li>
-          </ul>
-          <a class="apply" href="#">Candidatar-se</a>
-        </article>
+                <article class="job-card">
+                    <h2>Especialista em Segurança da Informação</h2>
+                    <p class="meta"><strong>Empresa:</strong> SecureTech</p>
+                    <ul class="job-list">
+                        <li>📍 Remoto · Sênior</li>
+                        <li>💰 R$ 11.000,00</li>
+                        <li>🧠 Requisitos: Pentest, SIEM, Cloud Security</li>
+                    </ul>
+                    <a class="apply" href="#">Candidatar-se</a>
+                </article>
 
-        <article class="job-card">
-          <h2>Engenheiro de Machine Learning</h2>
-          <p class="meta"><strong>Empresa:</strong> AI Labs</p>
-          <ul class="job-list">
-            <li>📍 São Paulo · Sênior</li>
-            <li>💰 R$ 12.000,00</li>
-            <li>🧠 Requisitos: Python, TensorFlow, MLOps</li>
-          </ul>
-          <a class="apply" href="#">Candidatar-se</a>
-        </article>
+                <article class="job-card">
+                    <h2>Engenheiro de Dados</h2>
+                    <p class="meta"><strong>Empresa:</strong> DataFlow</p>
+                    <ul class="job-list">
+                        <li>📍 Belo Horizonte · Pleno</li>
+                        <li>💰 R$ 9.000,00</li>
+                        <li>🧠 Requisitos: Spark, Airflow, ETL</li>
+                    </ul>
+                    <a class="apply" href="#">Candidatar-se</a>
+                </article>
 
-        <article class="job-card">
-          <h2>Especialista em Segurança da Informação</h2>
-          <p class="meta"><strong>Empresa:</strong> SecureTech</p>
-          <ul class="job-list">
-            <li>📍 Remoto · Sênior</li>
-            <li>💰 R$ 11.000,00</li>
-            <li>🧠 Requisitos: Pentest, SIEM, Cloud Security</li>
-          </ul>
-          <a class="apply" href="#">Candidatar-se</a>
-        </article>
+                <article class="job-card">
+                    <h2>UX/UI Designer</h2>
+                    <p class="meta"><strong>Empresa:</strong> Creative Studio</p>
+                    <ul class="job-list">
+                        <li>📍 Remoto · Pleno</li>
+                        <li>💰 R$ 6.500,00</li>
+                        <li>🧠 Requisitos: Figma, Prototipação, Pesquisa</li>
+                    </ul>
+                    <a class="apply" href="#">Candidatar-se</a>
+                </article>
 
-        <article class="job-card">
-          <h2>Engenheiro de Dados</h2>
-          <p class="meta"><strong>Empresa:</strong> DataFlow</p>
-          <ul class="job-list">
-            <li>📍 Belo Horizonte · Pleno</li>
-            <li>💰 R$ 9.000,00</li>
-            <li>🧠 Requisitos: Spark, Airflow, ETL</li>
-          </ul>
-          <a class="apply" href="#">Candidatar-se</a>
-        </article>
+                <article class="job-card">
+                    <h2>Arquiteto de Software</h2>
+                    <p class="meta"><strong>Empresa:</strong> Tech Architects</p>
+                    <ul class="job-list">
+                        <li>📍 São Paulo · Sênior</li>
+                        <li>💰 R$ 15.000,00</li>
+                        <li>🧠 Requisitos: Microservices, Cloud, DDD</li>
+                    </ul>
+                    <a class="apply" href="#">Candidatar-se</a>
+                </article>
 
-        <article class="job-card">
-          <h2>UX/UI Designer</h2>
-          <p class="meta"><strong>Empresa:</strong> Creative Studio</p>
-          <ul class="job-list">
-            <li>📍 Remoto · Pleno</li>
-            <li>💰 R$ 6.500,00</li>
-            <li>🧠 Requisitos: Figma, Prototipação, Pesquisa</li>
-          </ul>
-          <a class="apply" href="#">Candidatar-se</a>
-        </article>
+                <!-- Vagas de estágio adicionadas -->
+                <article class="job-card">
+                    <h2>Estágio em Desenvolvimento Web</h2>
+                    <p class="meta"><strong>Empresa:</strong> WebStart</p>
+                    <ul class="job-list">
+                        <li>📍 Franca - SP · Estágio</li>
+                        <li>💰 Bolsa: R$ 1.200,00</li>
+                        <li>🧠 Requisitos: HTML, CSS, JavaScript (noções)</li>
+                    </ul>
+                    <a class="apply" href="#">Candidatar-se</a>
+                </article>
 
-        <article class="job-card">
-          <h2>Arquiteto de Software</h2>
-          <p class="meta"><strong>Empresa:</strong> Tech Architects</p>
-          <ul class="job-list">
-            <li>📍 São Paulo · Sênior</li>
-            <li>💰 R$ 15.000,00</li>
-            <li>🧠 Requisitos: Microservices, Cloud, DDD</li>
-          </ul>
-          <a class="apply" href="#">Candidatar-se</a>
-        </article>
+                <article class="job-card">
+                    <h2>Estágio em Suporte de TI</h2>
+                    <p class="meta"><strong>Empresa:</strong> HelpDesk Co.</p>
+                    <ul class="job-list">
+                        <li>📍 Remoto · Estágio</li>
+                        <li>💰 Bolsa: R$ 1.000,00</li>
+                        <li>🧠 Requisitos: Windows, redes básicas, atendimento ao usuário</li>
+                    </ul>
+                    <a class="apply" href="#">Candidatar-se</a>
+                </article>
 
-        <!-- Vagas de estágio adicionadas -->
-        <article class="job-card">
-          <h2>Estágio em Desenvolvimento Web</h2>
-          <p class="meta"><strong>Empresa:</strong> WebStart</p>
-          <ul class="job-list">
-            <li>📍 Franca - SP · Estágio</li>
-            <li>💰 Bolsa: R$ 1.200,00</li>
-            <li>🧠 Requisitos: HTML, CSS, JavaScript (noções)</li>
-          </ul>
-          <a class="apply" href="#">Candidatar-se</a>
-        </article>
+                <article class="job-card">
+                    <h2>Estágio em QA / Testes</h2>
+                    <p class="meta"><strong>Empresa:</strong> QualityWorks</p>
+                    <ul class="job-list">
+                        <li>📍 São Paulo · Estágio</li>
+                        <li>💰 Bolsa: R$ 1.300,00</li>
+                        <li>🧠 Requisitos: Testes manuais, relatórios, atenção a detalhes</li>
+                    </ul>
+                    <a class="apply" href="#">Candidatar-se</a>
+                </article>
+            </section>
+        </div>
+    </main>
 
-        <article class="job-card">
-          <h2>Estágio em Suporte de TI</h2>
-          <p class="meta"><strong>Empresa:</strong> HelpDesk Co.</p>
-          <ul class="job-list">
-            <li>📍 Remoto · Estágio</li>
-            <li>💰 Bolsa: R$ 1.000,00</li>
-            <li>🧠 Requisitos: Windows, redes básicas, atendimento ao usuário</li>
-          </ul>
-          <a class="apply" href="#">Candidatar-se</a>
-        </article>
+    <!-- Footer Antigo 
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© 2025 Projeto Fatec — Conectando Alunos e Empresas</p>
+        </div>
+    </footer>
+    -->
 
-        <article class="job-card">
-          <h2>Estágio em QA / Testes</h2>
-          <p class="meta"><strong>Empresa:</strong> QualityWorks</p>
-          <ul class="job-list">
-            <li>📍 São Paulo · Estágio</li>
-            <li>💰 Bolsa: R$ 1.300,00</li>
-            <li>🧠 Requisitos: Testes manuais, relatórios, atenção a detalhes</li>
-          </ul>
-          <a class="apply" href="#">Candidatar-se</a>
-        </article>
-      </section>
-    </div>
-  </main>
-
-
-  <!-- Novo Footer -->
-  <footer class="footer-pi">
-    <p>2025 - Fatec Franca - DSM - Projeto Interdisciplinar &copy;</p>
-  </footer>
-
-  <!-- Footer Anterior -->
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© 2025 Projeto Fatec — Conectando Alunos e Empresas</p>
-    </div>
-  </footer>
-
+    <footer class="footer-pi">
+        <p>2025 - Fatec Franca - DSM - Projeto Interdisciplinar &copy;</p>
+    </footer>
 </body>
 
 </html>
