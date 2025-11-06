@@ -94,3 +94,80 @@ body {
     margin: 0;
 }
 */
+
+/* Adicionando responsividade */
+
+@media (max-width: 360px) {
+    .container {
+        width: 100%;
+    }
+
+    #saudacao {
+        margin-left: 40px;
+    }
+
+    #saudacao h2 {
+        font-size: 25px;
+        margin-left: 20px;
+    }
+
+    #saudacao p {
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+    }
+    
+    #saudacao {
+        margin-left: 50px;
+    }
+
+    #saudacao h2 {
+        font-size: 40px;
+        margin-left: 20px;
+    }
+    #saudacao p {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+
+    #saudacao {
+        margin-left: 65px;
+    }
+
+    #saudacao h2 {
+        font-size: 45px;
+        margin-left: 30px;
+    }
+
+    #saudacao p {
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 720px) {
+    .container {
+        width: 100%;
+    }
+
+    #saudacao {
+        margin-left: 80px;
+    }
+
+    #saudacao h2 {
+        font-size: 45px;
+        margin-left: 35px;
+    }
+
+    #saudacao p {
+        margin-left: 35px;
+    }
+}
