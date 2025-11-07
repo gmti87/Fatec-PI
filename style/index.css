@@ -1,173 +1,89 @@
-/* Reset de margin e padding */
+/* Reset básico */
 * {
-    margin: 0;
-    padding: 1px;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 1px;
+  box-sizing: border-box;
 }
 
-/* Estilos gerais */
+/* Corpo da página */
 body {
-    font-family: sans-serif;
-    /* background-image: url(../Imagens/WhatsApp\ Image\ 2025-10-22\ at\ 22.49.26.jpeg); */
-    background-image: url('../imagens/index.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin: 0;
+  font-family: sans-serif;
+  background: url('../imagens/index.jpeg') center/cover no-repeat;
+  color: #fff;
 }
 
-/* Navbar 
-#n {
-    background-color: #b20000;
-    padding: 15px 0;
-    height: 100px;
-}
-
-#n img {
-    width: 80px;
-    height: 80px;
-    margin-top: -5px;
-    margin-left: 70px;
-}
-*/
-
+/* Container principal */
 .container {
-    width: 1200px;
-    height: 80px;
-    margin-left: 220px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: -85px;
-    background-color: #b20000;
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* .navbar a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 20px;
-    margin-left: 20px;
-    font-family: sans-serif;
-}
-
-.navbar .navbar-links a:hover {
-    color: #ffffff;
-} */
-
+/* Seção de saudação */
 #saudacao {
-    /* width: 1200px; */
-    width: 80%;
-    height: 350px;
-    /* margin-top: 100px; */
-    margin-top: 80px;
-    display: grid;
-    background-color: rgb(0, 0, 0, 0.5);
-    margin-left: 120px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 8px;
+  max-width: 900px;
+  width: 90%;
 }
 
 #saudacao h2 {
-    font-size: 50px;
-    margin-left: 144px;
-    color: #ffffff;
+  font-size: 3rem;
+  margin-bottom: 15px;
 }
 
 #saudacao p {
-    font-size: 30px;
-    margin-left: 140px;
-    margin-top: -20px;
-    color: #ffffff;
-}
-/* Footer 
-.footer {
-    background-color: #b20000;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    margin-top: 130px;
-
+  font-size: 1.5rem;
 }
 
-.footer p {
-    margin: 0;
-}
-*/
+/* --- Responsividade --- */
 
-/* Adicionando responsividade */
-
-@media (max-width: 360px) {
-    .container {
-        width: 100%;
-    }
-
-    #saudacao {
-        margin-left: 40px;
-    }
-
-    #saudacao h2 {
-        font-size: 25px;
-        margin-left: 20px;
-    }
-
-    #saudacao p {
-        margin-left: 15px;
-    }
+/* Telas até 1024px (tablets e notebooks pequenos) */
+@media (max-width: 1024px) {
+  #saudacao h2 {
+    font-size: 2.5rem;
+  }
+  #saudacao p {
+    font-size: 1.2rem;
+  }
 }
 
+/* Telas até 768px (tablets verticais e celulares grandes) */
+@media (max-width: 768px) {
+  #saudacao {
+    padding: 50px 15px;
+  }
+  #saudacao h2 {
+    font-size: 2rem;
+  }
+  #saudacao p {
+    font-size: 1.1rem;
+  }
+}
+
+/* Telas até 480px (celulares pequenos) */
 @media (max-width: 480px) {
-    .container {
-        width: 100%;
-    }
-    
-    #saudacao {
-        margin-left: 50px;
-    }
-
-    #saudacao h2 {
-        font-size: 40px;
-        margin-left: 20px;
-    }
-    #saudacao p {
-        margin-left: 20px;
-    }
+  #saudacao {
+    padding: 40px 10px;
+  }
+  #saudacao h2 {
+    font-size: 1.6rem;
+  }
+  #saudacao p {
+    font-size: 1rem;
+  }
 }
 
-@media (max-width: 600px) {
-    .container {
-        width: 100%;
-    }
-
-    #saudacao {
-        margin-left: 65px;
-    }
-
-    #saudacao h2 {
-        font-size: 45px;
-        margin-left: 30px;
-    }
-
-    #saudacao p {
-        margin-left: 30px;
-    }
-}
-
-@media (max-width: 720px) {
-    .container {
-        width: 100%;
-    }
-
-    #saudacao {
-        margin-left: 80px;
-    }
-
-    #saudacao h2 {
-        font-size: 45px;
-        margin-left: 35px;
-    }
-
-    #saudacao p {
-        margin-left: 35px;
-    }
+/* Telas até 360px (celulares muito pequenos) */
+@media (max-width: 360px) {
+  #saudacao h2 {
+    font-size: 1.4rem;
+  }
+  #saudacao p {
+    font-size: 0.9rem;
+  }
 }
